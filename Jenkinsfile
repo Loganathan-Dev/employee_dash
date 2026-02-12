@@ -2,21 +2,19 @@ pipeline {
     agent any
 
     stages {
-        stage('Checkout') {
-            steps {
-                checkout scm
-            }
-        }
-
         stage('Build') {
             steps {
-                echo 'No build needed for static HTML/CSS project'
+                echo 'Building emplyee board...'
             }
         }
-
         stage('Test') {
             steps {
-                echo 'No tests configured'
+                echo 'Running tests...'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying employee board...'
             }
         }
     }
