@@ -1,0 +1,164 @@
+<style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* Page background */
+    body {
+      background: #f4f6f8;
+      padding: 20px;
+    }
+
+    /* Main container */
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: #ffffff;
+      padding: 20px 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Headings */
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    h2 {
+      margin-bottom: 15px;
+      color: #444;
+    }
+
+    /* Form section */
+    .formd {
+      margin-bottom: 30px;
+      padding: 20px;
+      background: #f9fafb;
+      border-radius: 6px;
+      border: 1px solid #ddd;
+    }
+
+    .formd form {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .formd input,
+    .formd select {
+      flex: 1;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    .formd input:focus,
+    .formd select:focus {
+      outline: none;
+      border-color: #007bff;
+    }
+
+    /* Button */
+    .formd button {
+      padding: 10px 20px;
+      background: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .formd button:hover {
+      background: #0056b3;
+    }
+
+    /* Table section */
+    .table-box {
+      margin-top: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    thead {
+      background: #007bff;
+      color: #ffffff;
+    }
+
+    th,
+    td {
+      padding: 12px;
+      text-align: left;
+      border: 1px solid #ddd;
+    }
+
+    tbody tr:nth-child(even) {
+      background: #f2f2f2;
+    }
+
+    tbody tr:hover {
+      background: #e9f2ff;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Employee Roll</h1>
+
+    <div class="formd">
+      <h2>Add Employee</h2>
+      <form>
+        <input type="text" placeholder="Employee Name" required>
+        <input type="text" placeholder="Employee ID" required>
+
+        <select required>
+          <option value="">Select Role</option>
+          <option>HR</option>
+          <option>Developer</option>
+          <option>Support Team</option>
+          <option>Helper</option>
+        </select>
+
+        <button type="submit">Add Employee</button>
+      </form>
+    </div>
+
+    <div class="table-box">
+      <h2>Employee List</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Role</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>EMP01</td>
+            <td>Logu</td>
+            <td>Manager</td>
+          </tr>
+          <tr>
+            <td>EMP02</td>
+            <td>Loga</td>
+            <td>Developer</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
